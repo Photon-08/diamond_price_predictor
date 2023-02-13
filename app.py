@@ -21,6 +21,7 @@ def train():
     #df = df.drop(df[df["y"]==0].index)
     #df = df.drop(df[df["z"]==0].index)
     df.dropna(inplace=True)
+    print(df.head(1))
 
     y = df["price"].copy()
     X = df.drop(["price"],axis=1)
