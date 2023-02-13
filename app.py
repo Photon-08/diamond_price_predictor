@@ -1,5 +1,5 @@
 import streamlit as st
-from predict import predict
+#from predict import predict
 import numpy as np
 import pandas as pd
 import time
@@ -49,7 +49,7 @@ def train():
 train()
 
 #testing 
-from model import train
+#from model import train
 
 import xgboost as xgb
 import streamlit as st
