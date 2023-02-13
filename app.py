@@ -14,7 +14,7 @@ from sklearn.metrics import r2_score
 import pickle 
 def train():
 
-    df = pd.read_csv("https://www.kaggle.com/datasets/shivam2503/diamonds", names=["carat",'cut','color','clarity','depth','table','price','x','y','z'])
+    df = pd.read_csv("https://drive.google.com/file/d/16XcJAgr-ChvIm9A4h2oxppglkPu74-8v/view?usp=share_link", names=["carat",'cut','color','clarity','depth','table','price','x','y','z'])
     #print(df["table"].unique())
 
     #df = df.drop(df[df["X"]==0].index)
