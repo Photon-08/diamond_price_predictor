@@ -14,7 +14,7 @@ from sklearn.metrics import r2_score
 import pickle 
 def train():
 
-    df = pd.read_csv("https://github.com/Photon-08/diamond_price_predictor/blob/main/diamonds.csv")
+    df = pd.read_csv("https://drive.google.com/file/d/16XcJAgr-ChvIm9A4h2oxppglkPu74-8v/view?usp=share_link")
     #print(df["table"].unique())
 
     df = df.drop(df[df["x"]==0].index)
