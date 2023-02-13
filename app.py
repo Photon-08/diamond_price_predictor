@@ -17,9 +17,10 @@ def train():
     df = pd.read_csv("https://drive.google.com/file/d/16XcJAgr-ChvIm9A4h2oxppglkPu74-8v/view?usp=share_link")
     #print(df["table"].unique())
 
-    df = df.drop(df[df["x"]==0].index)
-    df = df.drop(df[df["y"]==0].index)
-    df = df.drop(df[df["z"]==0].index)
+    #df = df.drop(df[df["X"]==0].index)
+    #df = df.drop(df[df["y"]==0].index)
+    #df = df.drop(df[df["z"]==0].index)
+    df.dropna(inplace=True)
 
     y = df["price"].copy()
     X = df.drop(["price"],axis=1)
